@@ -25,6 +25,8 @@ Tato webová stránka slouží jako moderní prezentační platforma pro zedník
 - Javascript
 - [Tailwind CSS](https://tailwindcss.com/)
 - HTML5
+- LightHouse(https://developer.chrome.com/docs/lighthouse/)
+- [W3C Validator](https://validator.w3.org/)
 
 ---
 
