@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   :root {
+      --color-primary: #a16207;
+      --color-secondary: #713f12;
+
+      --color-black: #111111;
+      --color-white: white;
+      --color-semiwhite: #eeeeee;
+   }
+}
+
+html {
+   @apply scroll-smooth;
+   @apply text-[#333333]
+}
+
+.hamburger-menu {
+   @apply relative z-50 block h-[3px] w-7 bg-white bg-transparent content-['']
+   before:absolute
+   before:top-[-0.35rem]
+   before:z-50
+   before:block
+   before:h-full
+   before:w-full
+   before:bg-[#eee]
+   before:transition-all
+   before:duration-200
+   before:ease-out
+   before:content-['']
+   before:rounded-full
+
+   after:absolute
+   after:right-0
+   after:bottom-[-0.35rem]
+   after:block
+   after:h-full
+   after:w-full
+   after:bg-[#eee]
+   after:transition-all
+   after:duration-200
+   after:ease-out
+   after:content-['']
+   after:rounded-full
+   select-none
+
+   peer-checked:bg-transparent
+   before:peer-checked:top-0
+   before:peer-checked:w-full
+   before:peer-checked:rotate-45
+   before:peer-checked:transform
+   before:peer-checked:bg-[#333]
+   
+   after:peer-checked:bottom-0
+   after:peer-checked:w-full
+   after:peer-checked:-rotate-45
+   after:peer-checked:transform
+   after:peer-checked:bg-[#333]
+}
+
+.link {
+   @apply md:px-1.5 lg:px-4 hover:bg-secondary-color px-4 py-3 rounded-lg  active:bg-secondary-color;
+}
+
+.sticky {
+   @apply top-0 w-full
+}
+
+.sticky + #onas {
+   @apply pt-[5px];
+}
+/* Cookies banner buttons color */
+.termsfeed-com---palette-light .cc-nb-okagree,
+.termsfeed-com---palette-light .cc-nb-reject,
+.termsfeed-com---palette-light .cc-cp-foot-save,
+.termsfeed-com---pc-dialog input[type=checkbox].cc-custom-checkbox:checked+label:before {
+  @apply !bg-primary-color 
+}
+
+.termsfeed-com---palette-light .cc-pc-head-close:active,
+.termsfeed-com---palette-light .cc-pc-head-close:focus {
+  border: 0 !important;
+}
+
+.termsfeed-com---palette-light .cc-pc-head-close {
+  @apply !border-0 !bg-[#ccc];
+}
+
+.termsfeed-com---palette-light .cc-pc-head-lang select:focus {
+  box-shadow: 0 0 0 2px var(--color-primary) !important
+}
+
+/* Mobile Cookies banner styles */
+.termsfeed-com---nb .cc-nb-main-container {
+  @apply md:!p-12 !p-6 
+}
+
+.termsfeed-com---palette-light.termsfeed-com---nb {
+  @apply !max-w-[100%] md:!max-w-[80%]
+}
+
+/*Import font styles*/
+.poppins-regular {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+ }
+ 
+ .poppins-medium {
+   font-family: "Poppins", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+ }
+ 
+ .poppins-semibold {
+   font-family: "Poppins", sans-serif;
+   font-weight: 600;
+   font-style: normal;
+ }
+ 
+ .poppins-bold {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+ }
+ 
+ /*Import bold fonts*/
+ .poppins-regular-italic {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-style: italic;
+ }
+ 
+ .poppins-medium-italic {
+   font-family: "Poppins", sans-serif;
+   font-weight: 500;
+   font-style: italic;
+ }
+ 
+ .poppins-semibold-italic {
+   font-family: "Poppins", sans-serif;
+   font-weight: 600;
+   font-style: italic;
+ }
+ 
+ .poppins-bold-italic {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: italic;
+ }

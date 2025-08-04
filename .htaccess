@@ -1,0 +1,88 @@
+# htaccess rules for subdomains and aliases
+# to create new subdomain, create a folder www/subdom/(subdomain name)
+# to create web for alias, create a folder www/domains/(whole domain name)
+
+# htaccess pravidla pro subdomeny a samostatne weby aliasu
+# pro vytvoreni subdomeny vytvorte adresar www/subdom/(nazev subdomeny)
+# pro vytvoreni webu pro alias vytvorte adresar www/domains/(cely domenovy nazev)
+# dalsi info a priklady: https://kb.wedos.com/cs/webhosting/htaccess/htaccess-na-webhostingu
+
+RewriteEngine On
+
+# podpora HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# nastaveni CSP
+Header set Content-Security-Policy: "upgrade-insecure-requests;"
+
+# cele domeny (aliasy)
+RewriteCond %{REQUEST_URI} !^domains/
+RewriteCond %{REQUEST_URI} !^/domains/
+RewriteCond %{HTTP_HOST} ^(www\.)?(.*)$
+RewriteCond %{DOCUMENT_ROOT}/domains/%2 -d
+RewriteRule (.*) domains/%2/$1 [DPI]
+
+# subdomeny (s nebo bez www na zacatku)
+RewriteCond %{REQUEST_URI} !^subdom/
+RewriteCond %{REQUEST_URI} !^/subdom/
+RewriteCond %{HTTP_HOST} ^(www\.)?(.*)\.([^\.]*)\.([^\.]*)$
+RewriteCond %{DOCUMENT_ROOT}/subdom/%2 -d
+RewriteRule (.*) subdom/%2/$1 [DPI]
+
+# aliasy - spravne presmerovani pri chybejicim /
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^domains/[^/]+/(.+[^/])$ /$1/ [R]
+
+# subdomeny - spravne presmerovani pri chybejicim /
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^subdom/[^/]+/(.+[^/])$ /$1/ [R]
+
+# zapnuti komprese GZip
+<IfModule mod_deflate.c>
+    <FilesMatch "\.(js|css|ttf|svg)$">
+        SetOutputFilter DEFLATE
+        Header always set Vary "Accept-Encoding"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault A600
+    ExpiresByType text/javascript A2678400
+    ExpiresByType application/javascript A2678400
+    ExpiresByType text/css A2678400
+    ExpiresByType image/gif A604800
+    ExpiresByType image/png A604800
+    ExpiresByType image/jpeg A604800
+    ExpiresByType image/svg+xml A604800
+    ExpiresByType image/x-icon A604800
+
+    ExpiresByType text/html A1
+
+    # Nezapomenout na fonty...
+    
+    <FilesMatch "image/kamery_web_[0-9]+\.jpg$">
+        ExpiresByType image/jpeg A600
+    </FilesMatch>
+</IfModule>
+
+<ifModule mod_headers.c> 
+    #cachovani souboru prohlizecem
+    # 1 rok pro obrazky a videa
+    <filesMatch ".(flv|gif|ico|jpg|jpeg|mp4|mpeg|png|svg|swf|webp)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </filesMatch>
+
+    # 1 mesic pro javascript a pdf soubory
+    <filesMatch ".(js|pdf)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </filesMatch>
+
+    # 1 tyden pro css soubory
+    <filesMatch ".(css)$">
+        Header set Cache-Control "max-age=604800, public"
+    </filesMatch>
+</ifModule>
+

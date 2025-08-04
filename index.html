@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <!-- Integrate Google Consent Mode V2 -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+      });
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      type="text/plain"
+      data-cookie-consent="tracking"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-W4RELV67NN"
+    ></script>
+    <script type="text/plain" data-cookie-consent="tracking">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-W4RELV67NN');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Profesionální stavební práce zahrnující stavbu, rekonstrukci, renovaci a opravy.
+    Spolehlivě dodáváme kvalitní služby od základů po dokončení projektu."
+    />
+
+    <title>Zedník Zlín | Stavební práce</title>
+
+    <link rel="icon" type="image/x-icon" href="img/icons/construction.svg" />
+
+    <!-- Theme browser colors -->
+    <meta name="theme-color" content="#713f12" />
+    <meta name="msapplication-navbutton-color" content="#713f12" />
+
+    <!-- for SEO Robots -->
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Czech" />
+
+    <!-- Indexing -->
+    <meta
+      name="google-site-verification"
+      content="KZ5V5TAchqU_cjvo5hq4W9WUJ13ExG-7IfAwDxQJqfQ"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.zednikzlin.eu" />
+
+    <link rel="stylesheet" href="index.css" />
+    <!-- Import Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="author" content="Daniel Kroupa" />
+  </head>
+  <body
+    class="bg-[#eee] font-poppins text-md text-gray-800 flex md:block flex-col min-h-screen lg:container mx-auto antialiased"
+  >
+    <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+    <script src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        cookieconsent.run({
+          notice_banner_type: "simple",
+          consent_type: "express",
+          palette: "light",
+          language: "cs",
+          page_load_consent_levels: ["strictly-necessary"],
+          notice_banner_reject_button_hide: false,
+          preferences_center_close_button_hide: false,
+          page_refresh_confirmation_buttons: false,
+          website_name: "www.zednikzlin.eu",
+
+          callbacks: {
+            scripts_specific_loaded: (level) => {
+              switch (level) {
+                case "targeting":
+                  gtag("consent", "update", {
+                    ad_storage: "granted",
+                    ad_user_data: "granted",
+                    ad_personalization: "granted",
+                    analytics_storage: "granted",
+                  });
+                  break;
+              }
+            },
+          },
+          callbacks_force: true,
+        });
+      });
+    </script>
+
+    <noscript
+      >Free cookie consent management tool by
+      <a href="https://www.termsfeed.com/">TermsFeed</a></noscript
+    >
+    <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+
+    <!-- Floating Call Button -->
+    <a href="tel:+420737336145">
+      <div
+        class="md:hidden block fixed bottom-5 right-5 z-40 bg-secondary-color shadow-lg drop-shadow-lg p-4 rounded-full"
+      >
+        <img
+          src="img/icons/phone-solid.svg"
+          width="24"
+          height="24"
+          alt="Telefon"
+          class="w-6 h-6 scale-x-[-1] select-none"
+        />
+      </div>
+    </a>
+
+    <!-- Mobile Menu-->
+    <label
+      for="mobile-menu"
+      class="bg-secondary-color right-2 top-4 z-40 cursor-pointer px-3 py-6 md:hidden block w-[3rem] h-[3rem] border-gray-400 rounded-lg fixed"
+    >
+      <input type="checkbox" class="peer hidden" id="mobile-menu" />
+      <div class="hamburger-menu"></div>
+      <div
+        class="fixed inset-0 z-40 hidden h-full w-full bg-white/20 backdrop-blur-sm peer-checked:block"
+      >
+        &nbsp;
+      </div>
+      <div
+        class="fixed top-0 right-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0"
+      >
+        <menu
+          class="float-right transition-opacity min-h-full w-[75%] bg-white px-6 pt-12 shadow-2xl"
+        >
+          <ul class="space-y-6">
+            <li>
+              <a
+                href="/"
+                class="link bg-primary-color text-[#ededed] font-semibold"
+                >Stavební práce</a
+              >
+            </li>
+
+            <li>
+              <a href="#kontakt" class="link hover:text-white" title="Kontakt"
+                >Kontakt</a
+              >
+            </li>
+            <li>
+              <a href="#onas" class="link hover:text-white" title="O mne"
+                >O mne</a
+              >
+            </li>
+            <li>
+              <a href="#ceny" class="link hover:text-white" title="Ceník služeb"
+                >Ceník služeb</a
+              >
+            </li>
+            <li>
+              <a
+                href="#ukazka"
+                class="link hover:text-white"
+                title="Ukázky práce"
+                >Ukázky práce</a
+              >
+            </li>
+            <li>
+              <a
+                href="#sluzby"
+                class="link hover:text-white"
+                title="Naše služby"
+                >Naše služby</a
+              >
+            </li>
+          </ul>
+        </menu>
+      </div>
+    </label>
+
+    <div id="navbar" class="z-30">
+      <!-- Contact Header -->
+      <div
+        class="w-full md:pl-6 pl-0 py-2 bg-primary-color md:flex md:justify-between block"
+        id="contact-navbar"
+      >
+        <div class="md:block hidden">
+          <a
+            href="/index.html"
+            class="flex items-center md:mr-8 mr-0 ml-2 md:ml-0 text-[#ededed] text-lg"
+          >
+            Zednikzlin.eu
+          </a>
+        </div>
+        <div class="md:flex block space-y-2 md:space-y-0">
+          <a
+            href="mailto:68.niko@seznam.cz"
+            class="flex items-center md:mr-8 mr-0 ml-2 md:ml-0"
+          >
+            <img
+              src="img/icons/envelope-solid.svg"
+              alt="Email"
+              width="24"
+              height="24"
+              class="w-6 h-6 mr-2 ml-1 md:ml-0 select-none"
+            />
+            <p class="text-[#ededed] text-lg">68.niko@seznam.cz</p>
+          </a>
+          <a
+            href="tel:+420737336145"
+            class="flex items-center md:mr-8 mr-0 ml-2 md:ml-0"
+          >
+            <img
+              src="img/icons/phone-solid.svg"
+              alt="Telefon"
+              width="24"
+              height="24"
+              class="w-6 h-6 mr-2 ml-1 md:ml-0 select-none"
+            />
+            <p class="text-[#ededed] text-lg">+420 737 336 145</p>
+          </a>
+        </div>
+      </div>
+      <!-- Clasic Menu-->
+      <nav
+        class="bg-primary-color px-4 md:w-[100%] mx-auto md:z-50 z-10 py-4 shadow-lg w-[90%] overflow-hidden md:block hidden"
+      >
+        <div class="flex text-white justify-between">
+          <div>
+            <a href="/" class="link font-semibold bg-[#814b1a] text-[#ededed]"
+              >Stavební práce</a
+            >
+          </div>
+          <div class="">
+            <a href="#kontakt" class="link">Kontakt</a>
+            <a href="#onas" class="link">O mne</a>
+            <a href="#ukazka" class="link">Ukázky práce</a>
+            <a href="#sluzby" class="link">Naše služby</a>
+            <a href="#ceny" class="link">Ceník služeb</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- MAIN SECTION -->
+    <main class="py-4 w-[100%]" id="sluzby">
+      <div class="bg-white rounded-lg p-4 my-2 shadow-md">
+        <h3
+          class="text-3xl font-semibold py-4 text-center text-secondary-color"
+        >
+          Zednické práce
+        </h3>
+        <div class="space-y-3">
+          <div
+            class="md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 lg:px-4 lg:gap-4 md:gap-0 gap-2 grid-cols-1 block items-center justify-center pb-4"
+          >
+            <div class="md:px-2 lg:px-4 xl:px-8 md:pb-0 pb-2">
+              <p
+                class="font-semibold text-lg mt-2 text-center mx-auto rounded-tr-lg rounded-tl-lg bg-primary-color w-full text-[#ededed] py-2"
+              >
+                Stavební práce
+              </p>
+              <img
+                src="img/434894035_819271606711990_315984411424684263_n.webp"
+                width="1018"
+                height="1018"
+                alt="Provádění staveb"
+                class="object-contain w-full mx-auto"
+              />
+
+              <div class="text-left shadow-md w-full mx-auto">
+                <div class="bg-gray-50/90 p-4 rouned-md">
+                  <p class="font-semibold mb-2">Provádím:</p>
+                  <ul class="list-disc text-left ml-4 space-y-2">
+                    <li class="text-secondary-color">
+                      <p class="text-[#111]">Sádrokartony</p>
+                    </li>
+                    <li class="text-secondary-color">
+                      <p class="text-[#111]">Fasády</p>
+                    </li>
+                    <li class="text-secondary-color">
+                      <p class="text-[#111]">Pergoly, terasy, altánky</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="md:px-2 lg:px-4 xl:px-8 md:pb-0 pb-2">
+              <p
+                class="font-semibold text-lg mt-2 text-center mx-auto rounded-tr-lg rounded-tl-lg bg-primary-color w-full text-[#ededed] py-2"
+              >
+                Obkládací práce
+              </p>
+              <img
+                src="img/434917812_1463142520970080_6376642124219879448_n.webp"
+                width="1018"
+                height="1018"
+                alt="Obkládání dlažby"
+                class="object-contain w-full mx-auto"
+              />
+
+              <div class="text-left shadow-md w-full mx-auto">
+                <div class="bg-gray-50/90 p-4 rouned-md">
+                  <p class="font-semibold mb-2">Obkládám:</p>
+                  <ul class="list-disc text-left ml-4 space-y-2">
+                    <li class="text-secondary-color">
+                      <p class="text-[#111]">Zámkové dlažby</p>
+                    </li>
+                    <li class="text-secondary-color">
+                      <p class="text-[#111]">
+                        Keramické obklady (např. koupelny)
+                      </p>
+                    </li>
+                    <li class="text-secondary-color">
+                      <p class="text-[#111]">Podladhové obklady</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="md:px-2 lg:px-4 xl:px-8 md:pb-0 pb-2">
+              <p
+                class="font-semibold text-lg mt-2 text-center mx-auto rounded-tr-lg rounded-tl-lg bg-primary-color w-full text-[#ededed] py-2"
+              >
+                Rekonstrukce a renovace
+              </p>
+              <img
+                src="img/435028209_1141836286995267_4167258654769919663_n.webp"
+                width="1018"
+                height="1018"
+                alt="Obkládání podlahy"
+                class="w-full mx-auto"
+              />
+
+              <div class="text-left shadow-md w-full mx-auto">
+                <div class="bg-gray-50/90 p-4 rouned-md">
+                  <p class="font-semibold mb-2">Provádím:</p>
+                  <ul class="list-disc text-left ml-4 space-y-2">
+                    <li class="text-secondary-color">
+                      <p class="text-[#111]">Rekonstrukci bytových jader</p>
+                    </li>
+                    <li class="text-secondary-color">
+                      <p class="text-[#111]">Opravu fasády, omítek</p>
+                    </li>
+                    <li class="text-secondary-color">
+                      <p class="text-[#111]">Výměnu střešních krytin</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-primary-color lg:!mb-auto md:p-3 p-2 md:px-4 px-2 lg:w-full xl:w-2/3 sm:w-full mx-auto rounded-md shadow-lg"
+          >
+            <p class="font-medium text-[#ebebeb] mx-4 mb-2 md:mb-0">
+              Jsem tu pro Vás, abych vám pomohl s jakýmkoli stavebním projektem
+              – od malých oprav až po velké stavby.
+            </p>
+            <h3
+              class="text-[#ededed] md:text-center text-left ml-4 text-xl font-semibold my-2"
+            >
+              Neváhejte mne kontaktovat
+            </h3>
+            <div class="md:flex block px-4 justify-center">
+              <a
+                href="tel:+420737336145"
+                class="flex items-center md:mr-8 mr-0 ml-0 pb-2 md:pb-0"
+              >
+                <div
+                  class="rounded-full bg-secondary-color w-12 h-12 mx-2 flex justify-center items-center"
+                >
+                  <img
+                    src="img/icons/phone-solid.svg"
+                    width="24"
+                    height="24"
+                    alt="Telefon"
+                    class="w-6 h-6"
+                  />
+                </div>
+                <p class="text-[#ededed] text-xl">+420 737 336 145</p>
+              </a>
+              <a
+                href="mailto:68.niko@seznam.cz"
+                class="flex items-center md:mr-8 mr-0 ml-0 pb-2 md:pb-0"
+              >
+                <div
+                  class="rounded-full bg-secondary-color w-12 h-12 mx-2 flex justify-center items-center"
+                >
+                  <img
+                    src="img/icons/envelope-solid.svg"
+                    width="24"
+                    height="24"
+                    alt="Telefon"
+                    class="w-6 h-6"
+                  />
+                </div>
+                <p class="text-[#ededed] text-xl">68.niko@seznam.cz</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section id="onas" class="shadow-md mb-8">
+      <div class="bg-white rounded-lg p-4 my-2">
+        <h1
+          class="text-3xl font-semibold md:py-6 py-4 text-secondary-color text-center"
+        >
+          O mne
+        </h1>
+
+        <div class="md:flex max-[1068px]:!block max-lg block">
+          <div
+            class="py-4 mb-4 md:mb-0 max-[1068px]:mx-auto max-[1068px]:!mb-0 md:py-0 flex flex-col md:block max-[1068px]:!flex items-center"
+          >
+            <img
+              src="img/2.webp"
+              class="object-contain md:max-w-full max-[768px]:!max-w-[80%] max-w-[55%] max-[1068px]:!max-w-[55%]"
+              alt="Renovace domu"
+              width="450"
+              height="450"
+            />
+          </div>
+          <div class="space-y-6 md:px-8 px-2 text-lg">
+            <h3 class="text-xl">Jmenuji se Nikolay Ivanov.</h3>
+            <h4>
+              Jsem řemeslník působící ve
+              <span class="font-bold text-secondary-color mb-2 italic"
+                >Zlíně a okolí Zlínska</span
+              >
+            </h4>
+
+            <p>
+              Mám více než <b class="text-secondary-color">20 let</b> zkušeností
+              v problematice zednických prací.
+            </p>
+            <p>
+              Vaše plány<span
+                class="text-lg text-secondary-color font-bold italic"
+              >
+                stavím v realitu.</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="shadow-md mb-8" id="ukazka">
+      <div class="bg-white rounded-lg md:p-4 pt-4 my-2">
+        <h3
+          class="text-3xl font-bold pt-4 md:px-0 px-2 text-secondary-color text-center"
+        >
+          Ukázky zednických prací
+        </h3>
+        <div class="space-y-2">
+          <p class="text-gray-600 mt-4 md:mx-10 mx-6 md:px-12 px-2">
+            Podívejte se do zákoutí našich prací nebo na některé z úspěšně
+            dokončených projektů.
+          </p>
+
+          <div class="bg-white h-full py-6 sm:py-4 lg:py-6">
+            <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+              <div
+                class="grid sm:grid-cols-none lg:grid-cols-3 gap-4 md:grid-cols-2 md:gap-6 xl:gap-8 pb-4"
+              >
+                <div
+                  class="group relative md:h-80 h-auto overflow-hidden rounded-lg bg-gray-100 shadow-lg"
+                >
+                  <img
+                    src="img/opravena-fasada.webp"
+                    alt="Oprava fasády domu"
+                    class="object-cover"
+                    width="458"
+                    height="344"
+                    loading="lazy"
+                  />
+                  <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"
+                  >
+                    <span
+                      class="relative ml-4 mb-3 top-[90%] z-50 inline-block text-sm text-white md:ml-5 md:text-lg"
+                    >
+                      Oprava fasády domu</span
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="group relative z-0 h-auto overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80"
+                >
+                  <img
+                    src="img/dlazba.webp"
+                    alt="Dlažební cesta"
+                    class="object-cover"
+                    width="949"
+                    height="427"
+                    loading="lazy"
+                  />
+
+                  <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"
+                  >
+                    <span
+                      class="relative ml-4 mb-3 md:top-[90%] top-[83%] inline-block text-sm text-white md:ml-5 md:text-lg"
+                    >
+                      Položení nové dlažby</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- image - end -->
+
+              <div
+                class="grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 grid-cols-2 grid-rows-1 justify-items-center md:justify-items-start gap-4 max-[540px]:gap-2 2xl:gap-48 xl:gap-28 pb-4"
+              >
+                <!-- image - start -->
+                <div
+                  class="group relative md:w-[13.5em] w-44 max-[361px]:w-40 object-cover md:h-96 h-auto overflow-hidden rounded-lg bg-gray-100 shadow-lg"
+                >
+                  <img
+                    src="img/pokladka-dlazby.webp"
+                    alt="Pokládka dlažby"
+                    class="object-cover"
+                    width="216"
+                    height="384"
+                    loading="lazy"
+                  />
+                  <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-65"
+                  >
+                    <span
+                      class="relative ml-4 mb-3 top-[90%] inline-block text-sm text-white md:ml-5 md:text-lg"
+                    >
+                      Pokládka dlažby</span
+                    >
+                  </div>
+                </div>
+                <!-- image - end -->
+
+                <!-- image - start -->
+                <div
+                  class="group relative md:w-[13.5em] w-44 max-[361px]:w-40 md:h-96 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg"
+                >
+                  <img
+                    src="img/snizeni-stropu.webp"
+                    alt=""
+                    class="object-cover"
+                    width="216"
+                    height="150"
+                    loading="lazy"
+                  />
+
+                  <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"
+                  >
+                    <span
+                      class="relative ml-4 mb-3 top-[90%] inline-block text-sm text-white md:ml-5 md:text-lg"
+                    >
+                      Úprava stropu</span
+                    >
+                  </div>
+                </div>
+
+                <!-- image - end -->
+
+                <!-- image - start -->
+
+                <div
+                  class="group relative md:w-[13.5em] w-44 max-[361px]:w-40 object-cover md:h-96 h-auto overflow-hidden rounded-lg bg-gray-100 shadow-lg"
+                >
+                  <img
+                    src="img/renovace-vstupu.webp"
+                    alt="Renovace vchodu dveří"
+                    class="object-cover"
+                    width="216"
+                    height="384"
+                    loading="lazy"
+                  />
+                  <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"
+                  >
+                    <span
+                      class="relative ml-4 mb-3 top-[90%] inline-block text-sm text-white md:ml-5 md:text-lg"
+                      >Renovování vstupu</span
+                    >
+                  </div>
+                </div>
+                <!-- image - end -->
+
+                <!-- image - start -->
+
+                <div
+                  class="group relative md:w-[13.5em] w-44 max-[361px]:w-40 object-cover md:h-96 h-auto overflow-hidden rounded-lg bg-gray-100 shadow-lg"
+                >
+                  <img
+                    src="img/koupelna.webp"
+                    alt="Rekonstrukce koupelny"
+                    class="object-cover"
+                    width="216"
+                    height="384"
+                    loading="lazy"
+                  />
+                  <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"
+                  >
+                    <span
+                      class="relative ml-4 mb-3 top-[84%] inline-block text-sm text-white md:ml-5 md:text-lg"
+                      >Rekonstrukce koupelnového jádra</span
+                    >
+                  </div>
+                </div>
+                <!-- image - end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shadow-md">
+      <div class="bg-white rounded-lg md:p-4 p-1 my-4">
+        <h3
+          class="text-3xl font-bold md:pt-0 pt-4 text-secondary-color text-center my-4"
+        >
+          Proč si vybrat nás
+        </h3>
+        <div class="space-y-2">
+          <div
+            class="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 text-[#111]"
+          >
+            <div
+              class="m-4 py-4 h-auto rounded-lg shadow-lg bg-white border-[3px] border-primary-color"
+            >
+              <div class="flex flex-col items-center">
+                <img
+                  src="img/icons/price_check.svg"
+                  width="24"
+                  height="24"
+                  alt="Cenová nabídka"
+                  class="w-14 p-2 bg-primary-color rounded-full"
+                />
+                <h4
+                  class="text-center text-xl font-semibold py-2 text-secondary-color"
+                >
+                  Jasná cenová nabídka
+                </h4>
+              </div>
+              <ul class="px-3 space-y-4 list-disc mx-4 text-base">
+                <li class="text-secondary-color">
+                  <p class="text-[#111]">Cenu díla odhadnu a předem nacením</p>
+                </li>
+                <li class="text-secondary-color">
+                  <p class="text-[#111]">Stanovenou cenu dodržuji</p>
+                </li>
+                <li class="text-secondary-color">
+                  <p class="text-[#111]">
+                    Případné změny ceny konzultuji s vámi předem
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="m-4 py-4 h-auto rounded-lg shadow-lg border-[3px] border-primary-color"
+            >
+              <div class="flex flex-col items-center">
+                <img
+                  src="img/icons/construction.svg"
+                  width="24"
+                  height="24"
+                  alt="Rekonstrukce"
+                  class="w-14 p-2 bg-primary-color rounded-full"
+                />
+                <h4
+                  class="text-center text-xl font-semibold py-2 text-secondary-color"
+                >
+                  Komplexní služby
+                </h4>
+              </div>
+              <ul class="px-3 space-y-4 list-disc mx-4 text-base">
+                <li class="text-secondary-color">
+                  <p class="text-[#111]">
+                    Jsem pro Vás při ruce od začátku projektu až do konce
+                  </p>
+                </li>
+                <li class="text-secondary-color">
+                  <p class="text-[#111]">
+                    Při realizaci stavby dbám na veškerou bezpečnost
+                  </p>
+                </li>
+                <li class="text-secondary-color">
+                  <p class="text-[#111]">S projektem ochotně poradím</p>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="m-4 py-4 h-auto rounded-lg shadow-lg border-[3px] border-primary-color"
+            >
+              <div class="flex flex-col items-center">
+                <img
+                  src="img/icons/approval_delegation.svg"
+                  width="24"
+                  height="24"
+                  alt="Zaručená kvalita"
+                  class="w-14 p-2 bg-primary-color rounded-full"
+                />
+                <h4
+                  class="text-center text-xl font-semibold py-2 text-secondary-color"
+                >
+                  Za kvalitu ručím
+                </h4>
+              </div>
+              <ul class="px-3 space-y-4 list-disc mx-4 text-base">
+                <li class="text-secondary-color">
+                  <p class="text-[#111]">
+                    Používám výhradně kvalitní a osvědčený materiál
+                  </p>
+                </li>
+                <li class="text-secondary-color">
+                  <p class="text-[#111]">
+                    Dokladem kvality služeb ručím 20 letou zkušeností a
+                    nespočtem zrealizovaných zakázek
+                  </p>
+                </li>
+                <li class="text-secondary-color">
+                  <p class="text-[#111]">Se mnou to zvládnete!</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-primary-color text-[#ededed]">
+      <div class="rounded-lg md:px-4 px-3 py-2" id="kontakt">
+        <h3 class="text-3xl text-center font-semibold py-4 ml-2 text-[#ededed]">
+          Kontakt
+        </h3>
+        <div class="text-left md:px-12 px-4 mb-4 text-[#ededed]">
+          <p class="">
+            Máte otázky nebo potřebujete konzultaci? Kontaktujte mne ohledně
+            vaší poptávky. Společně cenu sjednáme dle vašich požadavků.
+          </p>
+          <p class="py-4">
+            Zavolejte nebo napište. Těším se na spolupráci s vámi!
+          </p>
+        </div>
+        <div class="md:flex block justify-between items-start">
+          <div class="flex-col space-y-4 w-full">
+            <div
+              class="md:flex md:ml-10 ml-0 block w-full md:space-x-8 space-y-4 md:space-y-0"
+            >
+              <div class="flex justify-start items-center">
+                <div
+                  class="rounded-full bg-secondary-color w-12 h-12 flex justify-center items-center"
+                >
+                  <img
+                    src="img/icons/envelope-solid.svg"
+                    width="24"
+                    height="24"
+                    alt=""
+                    class="w-6 h-6"
+                  />
+                </div>
+                <p class="ml-2">
+                  <a
+                    href="mailto:68.niko@seznam.cz"
+                    class="hover:text-[#ededed]"
+                    >68.niko@seznam.cz</a
+                  >
+                </p>
+              </div>
+              <div class="flex justify-start items-center">
+                <div
+                  class="rounded-full bg-secondary-color w-12 h-12 flex justify-center items-center"
+                >
+                  <img
+                    src="img/icons/phone-solid.svg"
+                    width="24"
+                    height="24"
+                    alt=""
+                    class="w-6 h-6"
+                  />
+                </div>
+                <p class="ml-2">
+                  <a href="tel:+420737336145" class="hover:text-[#ededed]"
+                    >+420 737 336 145</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="flex md:ml-10 ml-0 items-center w-full">
+              <div
+                class="rounded-full bg-secondary-color w-12 h-12 flex justify-center items-center"
+              >
+                <img
+                  src="img/icons/house-solid.svg"
+                  width="24"
+                  height="24"
+                  alt=""
+                  class="w-6 h-6"
+                />
+              </div>
+              <div class="ml-2">
+                <p class="">Osvobození 282</p>
+                <p class="">Želechovice nad Dřevnicí, 763 11</p>
+                <p>IČO: 87228238</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class="md:flex text-sm block md:justify-between items-center md:space-x-8 space-x-0 py-2 bg-secondary-color md:px-8 px-4 text-[#f2f2f2]"
+        >
+          <p class="md:pb-0 pb-2 md:text-left text-center">
+            &copy; 2024
+            <a href="/" class="hover:underline">www.zednikzlin.eu</a>
+          </p>
+          <div
+            class="md:space-x-4 space-x-0 flex-col flex md:block items-start"
+          >
+            <button
+              onclick="cookieconsent.openPreferencesCenter();"
+              class="hover:underline"
+            >
+              Předvolby cookies
+            </button>
+            <a href="text-left" class="hover:underline" rel="nofollow"
+              >Zásady ochrany osobních údajů</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      window.onscroll = function () {
+        stickyNavbar();
+      };
+
+      var navbar = document.getElementById("navbar");
+      var contactNavbar = document.getElementById("contact-navbar");
+      var sticky = navbar.offsetTop;
+
+      function stickyNavbar() {
+        if (window.scrollY >= sticky) {
+          navbar.classList.add("sticky");
+          contactNavbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+          contactNavbar.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+</html>
